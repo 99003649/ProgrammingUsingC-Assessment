@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProblemTwo_CompilationError
 {
-    class DirectReport
+    public class DirectReport :Employee
     {
         public Employee ReportsTo { get; set; }
         public string ProjectCode { get; set; }
-
-        public DirectReport(Employee managerEmpObj,string pCode) :base(eID,eName,eLevel,eDoJ)
+        public Employee Employee;
+        //public int eID;
+        public DirectReport(Employee managerEmpObj,string pCode) :Employee( int eID, string eName, string eLevel, DateTime eDoJ)
         {
             ReportsTo = managerEmpObj;
             ProjectCode = pCode;
