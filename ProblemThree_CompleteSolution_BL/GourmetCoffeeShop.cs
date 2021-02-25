@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProblemThree_CompleteSolution_BL
 {
-   public class GourmetCoffeeShop : GourmetShop, ITaxCompute
+   public class GourmetCoffeeShop : GourmetShop
     {
 
         public int GId;
